@@ -32,6 +32,6 @@ The workflow in this notebook is similar to the previous one, but it uses a vers
 ## Conclusion and Next Steps
 
 This project provides a comprehensive approach to predicting used car prices, from data preprocessing and exploratory analysis to model development and evaluation. It was found that the decision tree model is the best model for this dataset using the metrices in this project. Additionally, removing the outliers did indeed decrease the MAE of the models significanlty but the models were poorly fitted which was indicated by an R-Squared value close to zero. Here is a comparison between the decision trees models for both datasets. Threfore, it was concluded that using the decsion tree model trained by the data wiht outliers is the best fit for this scinario. 
-
+![Image 1]([image1.png](https://raw.githubusercontent.com/akalabri/Car_Price_Prediction/main/with_Outliers.png?token=GHSAT0AAAAAACIKBX2FDQAMJ5QOGQDH7OMSZJYXVBQ)) ![Image 2]([image2.png](https://raw.githubusercontent.com/akalabri/Car_Price_Prediction/main/No_Outliers.png?token=GHSAT0AAAAAACIKBX2FE47Q5NXLIY7WXQ5IZJYXUYA))
 
 Future work could include fine-tuning the models, experimenting with additional features, and deploying the models for real-time predictions. Also, adding a dashboard for the EDA section will be very helpful in delivering the results to the users. Moreover, building a webiste based interface to predict the car price given certain inputs will be very helpful as well
