@@ -8,7 +8,7 @@ This project aims to develop and evaluate machine learning models to predict the
 
 - `Data_Preprocessing.ipynb`: This notebook contains all the preprocessing steps, including handling missing values, encoding categorical features, and normalizing numerical features.
 - `EDA.ipynb`: This notebook is dedicated to Exploratory Data Analysis, providing visualizations and insights into the dataset's feature distributions, correlations, and outliers.
-- `ML-with Outliers.ipynb`: In this notebook, various machine learning models are developed and evaluated using the dataset with outliers.
+- `ML-with Outliers.ipynb`: In this notebook, various machine learning models are developed and evaluated using the dataset with outliers that was created during EDA.
 - `ML-No Outliers.ipynb`: This notebook repeats the machine learning workflow, but with a dataset where outliers have been removed from the target variable (price).
 
 ## Project Workflow
@@ -19,7 +19,7 @@ In this initial step, the training and test datasets are loaded and cleaned. Spe
 
 ### 2. Exploratory Data Analysis (EDA) (`EDA.ipynb`)
 
-The EDA notebook starts by importing the preprocessed data. It focuses on visualizing the data to understand the distributions of different features, identify potential outliers, and explore relationships between features and the target variable (car prices). Insights and patterns identified in this step guide the model development phase.
+The EDA notebook starts by importing the preprocessed data. It focuses on visualizing the data to understand the distributions of different features, identify potential outliers, and explore relationships between features and the target variable (car prices). During outliers analysis, two seperate dataframes are created to then test if removing outliers would help the accuracy. 
 
 ### 3. Model Development and Evaluation with Outliers (`ML-with Outliers.ipynb`)
 
@@ -31,4 +31,7 @@ The workflow in this notebook is similar to the previous one, but it uses a vers
 
 ## Conclusion and Next Steps
 
-This project provides a comprehensive approach to predicting used car prices, from data preprocessing and exploratory analysis to model development and evaluation. Future work could include fine-tuning the models, experimenting with additional features, and deploying the models for real-time predictions.
+This project provides a comprehensive approach to predicting used car prices, from data preprocessing and exploratory analysis to model development and evaluation. It was found that the decision tree model is the best model for this dataset using the metrices in this project. Additionally, removing the outliers did indeed decrease the MAE of the models significanlty but the models were poorly fitted which was indicated by an R-Squared value close to zero. Here is a comparison between the decision trees models for both datasets. Threfore, it was concluded that using the decsion tree model trained by the data wiht outliers is the best fit for this scinario. 
+
+
+Future work could include fine-tuning the models, experimenting with additional features, and deploying the models for real-time predictions. Also, adding a dashboard for the EDA section will be very helpful in delivering the results to the users. Moreover, building a webiste based interface to predict the car price given certain inputs will be very helpful as well
